@@ -1,0 +1,137 @@
+body,
+h1,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* Clearfix */
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+body {
+  background-color: #ddd;
+}
+
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.header {
+  background-image: url(images/header-bg.gif);
+  background-size: cover;
+  color: #e4b445;
+  padding-top: 50px;
+  overflow: hidden;
+}
+
+.container {
+  border-width: 30px 30px 0 30px;
+  border-style: solid;
+  padding: 30px;
+}
+
+.container-point {
+  float: right;
+  margin-bottom: -100px;
+  margin-right: -50px;
+}
+
+.container h1 {
+  margin-bottom: 30px;
+  font-family: "Bitter", serif;
+  line-height: 1.2;
+}
+
+.container p {
+  line-height: 1.6;
+}
+
+.contents {
+  background-color: white;
+  padding: 20px 0;
+}
+
+.menu {
+  /* background-color: antiquewhite; */
+  margin: 0 -15px;
+}
+
+.menu-item {
+  /* background-color: orange; */
+  float: left;
+  width: 33.33333333%;
+  padding: 0 15px;
+  box-sizing: border-box;
+  transition: width 0.4s ease-in-out;
+}
+
+.menu:hover .menu-item {
+   width: 25%;
+}
+
+.menu .menu-item:hover {
+  width: 50%;
+}
+
+.menu .menu-item:hover .dessert::before{
+   opacity: 0;
+}
+
+.dessert {
+  background-color: dodgerblue;
+  height: 100px;
+  padding: 20px;
+  color: #ffffff;
+  font-family: "Bitter", serif;
+  font-size: 20px;
+  line-height: 1;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.dessert::before{
+   content:'';
+   background-color: #000;
+   opacity: 0.5;
+   position: absolute;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   transition: opacity .4s ease-in-out;
+}
+
+.dessert span{
+   position: relative;
+}
+
+.footer {
+  border-top: 1px solid #aaa;
+  padding: 20px 0;
+  text-align: center;
+  color: #999;
+}
+
+.dessert_cake{
+   background-image: url(images/cake.png);
+}
+
+.dessert_crepe{
+   background-image: url(images/crepe.png);
+}
+
+.dessert_cookie{
+   background-image: url(images/cookie.png);
+}
